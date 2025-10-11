@@ -90,7 +90,10 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 
 ---
 
-## 📸 Example Output Preview
+## Lambda Execution Log
+![Lambda Log Screenshot](docs/lambda-execution-log.png)
+
+## JSON Report
 ![Example Report Screenshot](docs/example-report.png)
 
 ## SNS Notification 
@@ -115,7 +118,8 @@ cloud-cost-calculator/
 ├── docs/
 │   ├── architecture-diagram.gif         ← Architecture overview diagram  
 │   ├── example-report.png               ← Screenshot of the JSON report  
-│   └── sns-notification.png             ← Screenshot of SNS email notification  
+│   └── sns-notification.png             ← Screenshot of SNS email notification
+│   └── lambda-execution-log.png         ← Screenshot of Lambda log output
 │
 ├── examples/
 │   └── weekly-report-2025-10-09.json    ← Sample generated cost report (JSON format)  
