@@ -127,6 +127,6 @@ cloud-cost-calculator/
 └── README.md                            ← Full project documentation
 
 ```
-### Author 
-**Paula Kim** 
+### Author
+**Paula Kim**  
 Cloud & AI Enthusiast
