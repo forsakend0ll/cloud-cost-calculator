@@ -106,18 +106,19 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 ```
 cloud-cost-calculator/
 │
-├── lambda_function.py          ← Lambda function code for cost tracking and SNS alerts  
+├── lambda_function.py                  ← Lambda function code for cost tracking and SNS alerts  
 │
 ├── docs/
-│   ├── architecture-diagram.gif ← Architecture overview diagram  
-│   └── example-report.png       ← Screenshot of the JSON report  
+│   ├── architecture-diagram.gif         ← Architecture overview diagram  
+│   ├── example-report.png               ← Screenshot of the JSON report  
+│   └── sns-notification.png             ← Screenshot of SNS email notification  
 │
 ├── examples/
-│   └── weekly-report-2025-10-09.json       ← Sample generated cost report (JSON format) 
+│   └── weekly-report-2025-10-09.json    ← Sample generated cost report (JSON format)  
 │
-└── README.md                    ← Full project documentation (this file)
+└── README.md                            ← Full project documentation
+
 ```
---- 
 ### Author 
 **Paula Kim** 
 Cloud & AI Enthusiast
