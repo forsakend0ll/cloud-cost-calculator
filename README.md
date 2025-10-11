@@ -44,17 +44,21 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 - Function name: `AWS_Cost_Tracker`
 - Runtime: **Python 3.12**
 - Memory: **256 MB**, Timeout: **30 seconds**
-- Upload file: `aws_cost_tracker.py`
-- IAM permissions required:
-  - `ce:GetCostAndUsage`
-  - `s3:PutObject`
-  - `sns:Publish`
+- Upload file: `lambda_function.py`
+- Attach IAM role with the following permissions:
+  - **Inline policies:**
+    - `AllowCostExplorerAccess` → grants `ce:GetCostAndUsage`
+    - `AllowSNSPublish` → grants `sns:Publish`
+  - **AWS managed policies:**
+    - `AmazonS3FullAccess` → allows S3 report upload (`s3:PutObject`)
+    - `AmazonSNSFullAccess` → enables SNS notifications
+    - `AWSLambdaBasicExecutionRole` → allows CloudWatch logging
 - Add environment variables:
   - `S3_BUCKET = cloud-cost-tracker-cloudwithpaula`
   - `SNS_TOPIC_ARN = arn:aws:sns:REGION:ACCOUNT_ID:CostAlerts`
 - Test manually:
-  - Verify S3 upload
-  - Confirm SNS email alert received
+  - Verify report uploads to S3
+  - Confirm SNS email notification is received
 
 ---
 
