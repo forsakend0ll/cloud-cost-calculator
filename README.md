@@ -114,7 +114,7 @@ cloud-cost-calculator/
 │   └── example-report.png       ← Screenshot of generated cost report  
 │
 ├── examples/
-│   └── example_report.csv       ← Sample output report stored in S3  
+│   └── weekly-report-2025-10-09.json       ← Sample generated cost report (JSON format) 
 │
 └── README.md                    ← Full project documentation (this file)
 ```
