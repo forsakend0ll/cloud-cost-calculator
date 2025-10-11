@@ -105,7 +105,7 @@ Example file name:
 ```
 ## Repository Structure
 
-```plaintext
+```
 cloud-cost-calculator/
 │
 ├── lambda_function.py          ← Lambda function code for cost tracking and SNS alerts  
