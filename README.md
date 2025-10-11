@@ -1,12 +1,12 @@
-# ☁️ Project 3 – Cloud Cost Calculator (Automated AWS Cost Tracking)
+# Project 3 – Cloud Cost Calculator (Automated AWS Cost Tracking)
 
-## 🧠 Problem
+## Problem
 AWS billing can be confusing and time-consuming to interpret.  
 This project automates the process of tracking, reporting, and alerting AWS costs on a weekly basis.
 
 ---
 
-## 🎯 Goal
+## Goal
 Automatically:
 - Track AWS usage and spending
 - Generate weekly cost reports
@@ -15,9 +15,9 @@ Automatically:
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
-### 📊 Architecture Diagram
-![Architecture Diagram](docs/architecture-diagram.gif)
+### Architecture Diagram
+![Architecture Diagram](architecture-diagram.gif)
 
 ---
