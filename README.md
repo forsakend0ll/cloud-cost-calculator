@@ -108,7 +108,7 @@ Example file name:
 ```plaintext
 cloud-cost-calculator/
 │
-├── aws_cost_tracker.py          ← Lambda function code for cost tracking and SNS alerts  
+├── lambda_function.py          ← Lambda function code for cost tracking and SNS alerts  
 │
 ├── docs/
 │   ├── architecture-diagram.gif ← Architecture overview diagram  
