@@ -9,7 +9,7 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 
 ![Architecture Diagram](docs/architecture-diagram.gif)
 
-The system operates without manual intervention — once deployed, it retrieves cost data, generates reports, and sends notifications automatically.
+>The system operates without manual intervention. Once deployed, it retrieves cost data, generates reports, and sends notifications automatically.
 
 ---
 
