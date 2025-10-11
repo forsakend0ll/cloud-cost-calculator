@@ -87,12 +87,8 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 ---
 
 ## 📸 Example Output Preview
-
-Here’s a sample generated report visualization:
-
 ![Example Report Screenshot](docs/example-report.png)
 
-Example file name:
 
 ## Learning Outcomes 
 - Built **a serverless AWS cost tracking system** using multiple AWS services
@@ -111,7 +107,7 @@ cloud-cost-calculator/
 │
 ├── docs/
 │   ├── architecture-diagram.gif ← Architecture overview diagram  
-│   └── example-report.png       ← Screenshot of generated cost report  
+│   └── example-report.png       ← Screenshot of the JSON report  
 │
 ├── examples/
 │   └── weekly-report-2025-10-09.json       ← Sample generated cost report (JSON format) 
