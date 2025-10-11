@@ -89,6 +89,9 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 ## 📸 Example Output Preview
 ![Example Report Screenshot](docs/example-report.png)
 
+## SNS Notification 
+>Below is a sample notification received from the SNS topic `CostAlerts`:
+![SNS Notification Screenshot](docs/sns-notification.png)
 
 ## Learning Outcomes 
 - Built **a serverless AWS cost tracking system** using multiple AWS services
