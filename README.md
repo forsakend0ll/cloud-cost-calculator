@@ -102,11 +102,9 @@ Example file name:
 - Configured **CloudWatch Billing Alarms** for real-time cost monitoring
 - Practiced **secure and cost-efficient resource management** under the AWS Free Tier
 
-```
 ## Repository Structure
 
-```plaintext
-
+```
 cloud-cost-calculator/
 │
 ├── lambda_function.py          ← Lambda function code for cost tracking and SNS alerts  
