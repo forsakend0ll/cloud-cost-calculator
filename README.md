@@ -26,21 +26,21 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 
 ## Step-by-Step Setup Summary
 
-### 1️⃣ Create an S3 Bucket
+### Create an S3 Bucket
 - Name: `cloud-cost-tracker-cloudwithpaula`
 - Create folder: `/reports/`
 - Ensure the **Lambda IAM role** has `s3:PutObject` permissions
 
 ---
 
-### 2️⃣ Create an SNS Topic
+### Create an SNS Topic
 - Topic name: `CostAlerts`
 - Add an **email subscription** and confirm via your inbox  
 - Note down the **Topic ARN** for Lambda environment variable configuration
 
 ---
 
-### 3️⃣ Create the Lambda Function
+### Create the Lambda Function
 - Function name: `AWS_Cost_Tracker`
 - Runtime: **Python 3.12**
 - Memory: **256 MB**, Timeout: **30 seconds**
@@ -62,7 +62,7 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 
 ---
 
-### 4️⃣ Create an EventBridge Rule
+### Create an EventBridge Rule
 - Rule name: `WeeklyCostReportTrigger`
 - Schedule: **Fixed rate of 7 days**
 - Target: `AWS_Cost_Tracker` Lambda function
@@ -71,7 +71,7 @@ It includes **weekly report generation**, **cost alerts**, and **automated sched
 
 ---
 
-### 5️⃣ Configure CloudWatch Billing Alarm
+### Configure CloudWatch Billing Alarm
 - Metric: `Billing → Total Estimated Charge → EstimatedCharges`
 - Threshold: `$5` (demo)
 - Action: Send notification to SNS topic `CostAlerts`
